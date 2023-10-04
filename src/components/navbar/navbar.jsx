@@ -20,7 +20,7 @@ const NavBar = () => {
                             <NavLink className={({ isActive }) => isActive ? "link-active" : ""} to="/Contact">Contacto</NavLink>
                             <NavLink className={({ isActive }) => isActive ? "link-active" : ""} to="/Store">Tienda</NavLink>
                             <NavLink className={({ isActive }) => isActive ? "link-active" : ""} to="/category/men's clothing">Ropa de Hombre</NavLink>
-                            <NavLink className={({ isActive }) => isActive ? "link-active" : ""} to="/category/men's clothing">Ropa de Dama</NavLink>
+                            <NavLink className={({ isActive }) => isActive ? "link-active" : ""} to="/category/women's clothing">Ropa de Dama</NavLink>
                             <NavLink className={({ isActive }) => isActive ? "link-active" : ""} to="/About" >Sobre nosotros</NavLink>
                             
                         </div>

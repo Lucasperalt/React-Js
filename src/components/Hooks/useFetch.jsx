@@ -10,7 +10,7 @@ const useFetch = (url) => {
     }
     useEffect(() => {
         getData()
-    },[])
+    },[url])
   return [Data]
 }
 
