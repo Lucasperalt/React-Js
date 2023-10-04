@@ -3,10 +3,11 @@ import { Row } from "react-bootstrap";
 import Container from 'react-bootstrap/Container';
 import ItemList from './ItemList'
 import useFetch from "../Hooks/useFetch";
+import { useParams } from "react-router-dom";
 const ItemListContainer = ({ greeting }) => {
-    const [items] = useFetch("https://fakestoreapi.com/products")
+    const category = useParams () .categoryId
+    const [items] = useFetch (category ? `https://fakestoreapi.com/products/categoy/${category}`: `https://fakestoreapi.com/products`)
     return (
-
         <Container>
             <Row>
                 {
